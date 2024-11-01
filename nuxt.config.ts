@@ -6,4 +6,21 @@ export default defineNuxtConfig({
   css: [
     "@/assets/css/tailwindcss.css", // Nhúng file CSS vào dự án
   ],
+  app: {
+    head: {
+      title: "NuxtJS dojo",
+      meta: [
+        {
+          name: "description",
+          content: "Everything you need to know about NuxtJS",
+        },
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
+      ],
+    },
+  },
 });
