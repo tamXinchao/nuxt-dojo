@@ -23,4 +23,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  runtimeConfig: {
+    // Biến bảo mật không nên công khai
+    secretKey: process.env.SECRET_KEY,
+    public: {
+      // Nếu cần có các biến môi trường công khai, định nghĩa ở đây
+    },
+  },
 });

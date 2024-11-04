@@ -6,10 +6,14 @@
       aliquid explicabo ad delectus eveniet ea quaerat eum magnam. Vitae odio et
       eius optio ea possimus voluptatum? Laboriosam a saepe nam.
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = useFetch("/api/tamXinchao");
+console.log(data);
+</script>
 
 <style scoped>
 h2 {
