@@ -6,18 +6,12 @@
       aliquid explicabo ad delectus eveniet ea quaerat eum magnam. Vitae odio et
       eius optio ea possimus voluptatum? Laboriosam a saepe nam.
     </p>
-    <div>{{ data.message }}</div>
+    <div>{{ data }}</div>
   </div>
 </template>
 
 <script setup>
-const { data } = useFetch("/api/tamXinchao?name=tam", {
-  method: "post",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ age: 19 }),
-});
+const { data } = useFetch("/api/currency/USD");
 console.log(data);
 </script>
 
